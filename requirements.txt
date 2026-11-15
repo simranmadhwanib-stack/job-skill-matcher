@@ -1,6 +1,4 @@
-@"
 flask
 requests
 python-dotenv
 gunicorn
-"@ | Set-Content -Encoding ascii requirements.txt
