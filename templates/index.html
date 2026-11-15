@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Skill Matcher</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Job Skill Matcher</h1>
+            <p>Find jobs that match your skills and discover what you need to learn next.</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-card">
+
+            <h2>Find Your Perfect Job</h2>
+            <p class="subtitle">Enter your skills and desired job role to get started.</p>
+
+            <div class="input-group">
+                <label for="skills">Enter Your Skills</label>
+                <input
+                    type="text"
+                    id="skills"
+                    placeholder="e.g. Python, Excel, SQL, Power BI"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="role">Enter Desired Job Role</label>
+                <input
+                    type="text"
+                    id="role"
+                    placeholder="e.g. Data Analyst"
+                >
+            </div>
+
+            <button type="button" id="findjobs">
+                Find Jobs
+            </button>
+
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" style="display: none;">
+
+            <h2>Your Matching Results</h2>
+
+            <div class="result-card">
+                <h3>Role Match Score</h3>
+                <p>85% Match</p>
+            </div>
+
+            <div class="result-card">
+                <h3>Missing Skills</h3>
+                <p>Power BI, Tableau, Statistics</p>
+            </div>
+
+            <div class="result-card">
+                <h3>Matching Jobs</h3>
+
+                <div class="job-card">
+                    <h4>Data Analyst</h4>
+                    <p>Company: XYZ Corp</p>
+                    <p>Percentage Match: 90%</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Recommended Skills</h3>
+
+                <div class="skill-card">
+                    <h4>Power BI</h4>
+                    <p>
+                        Power BI is a business analytics tool by Microsoft
+                        that allows you to visualize and analyze data.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fc;
+    color: #25324b;
+}
+
+/* Main Container */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 38px;
+    color: #19376d;
+    margin-bottom: 12px;
+}
+
+.header p {
+    font-size: 17px;
+    color: #68758a;
+    line-height: 1.6;
+}
+
+/* Search Card */
+
+.search-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(30, 55, 90, 0.08);
+}
+
+.search-card h2 {
+    color: #19376d;
+    margin-top: 0;
+}
+
+.subtitle {
+    color: #68758a;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+#skills,
+#role {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5deeb;
+    border-radius: 9px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#skills:focus,
+#role:focus {
+    border-color: #3978d5;
+    box-shadow: 0 0 0 3px rgba(57, 120, 213, 0.12);
+}
+
+/* Find Jobs Button */
+
+#findjobs {
+    background-color: #2864c5;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#findjobs:hover {
+    background-color: #194c9e;
+    transform: translateY(-2px);
+}
+
+/* Results Section */
+
+#results {
+    margin-top: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(30, 55, 90, 0.08);
+}
+
+#results h2 {
+    color: #19376d;
+    margin-top: 0;
+}
+
+.result-card {
+    padding: 20px;
+    margin-top: 18px;
+    background-color: #f5f8fd;
+    border-radius: 10px;
+    border-left: 4px solid #3978d5;
+}
+
+.result-card h3 {
+    color: #2864c5;
+    margin-top: 0;
+}
+
+.job-card,
+.skill-card {
+    background-color: white;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 9px;
+}
+
+.job-card h4,
+.skill-card h4 {
+    color: #19376d;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 29px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .search-card {
+        padding: 22px;
+    }
+
+    #findjobs {
+        width: 100%;
+    }
+}
+
+.score-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.score-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.score-value {
+    font-weight: 700;
+}
+
+.score-label {
+    font-size: 14px;
+}
+
+.skill-note {
+    color: #8a6d1d;
+    background: #fff8e1;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
